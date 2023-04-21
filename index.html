@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버</title>
+    <style>
+        header {background: yellow;}
+        iframe {
+            width: 100%; height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- php는 서버측 언어이기 때문에 웹서버 업로드 확인가능 -->  <!-- 기본 php 문법, 여기에서 빨간색으로 나오는 건 오류가 아님. PHP 옆에 주석 쓰면 오류 남-->
+    <?php include("header.php") ?>
+    <main>
+        <div class="login_box">로그인</div>
+        <div class="news">
+            <iframe src="http://jongjealee.dothome.co.kr/gnuboard/bbs/board.php?bo_table=board_test" frameborder="0"></iframe> <!-- php 와 다르게 로컬로 바로 보기 가능 -->
+            <iframe src="http://jongjealee.dothome.co.kr/gnuboard/bbs/board.php?bo_table=board_board" frameborder="0"></iframe> <!-- php 와 다르게 로컬로 바로 보기 가능 -->
+        </div>
+        <div class="comic">웹툰</div>
+    </main>
+    <?php include("footer.php") ?>
+</body>
+</html>
